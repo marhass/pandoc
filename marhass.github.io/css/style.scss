@@ -3,7 +3,10 @@
 ---
 @charset "utf-8";
 
-
+// bright blue: #2995a3, "grey-color"
+// navy blue: #005b80, "site-title"
+// maroon: #660030, main text
+// crème: #fffafa, background
 
 // Our variables
 $base-font-family: "Georgia";
@@ -15,10 +18,10 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #660030;
-$background-color: #ffe4bd;
+$background-color: #fffafa;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #2995a3;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -146,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #FA8072 !important;
+    color: #205a08 !important;
     text-decoration: none;
 
     &:visited {
@@ -161,21 +164,14 @@ a {
     &.page-link{
       &:hover {
           color: $text-color;
-          border-bottom: 1px dotted $text-color ;
+          border-bottom: 1px dotted black ;
       }
     }
     &.postLink{
-<<<<<<< HEAD
-      color: #0d033a !important;
-      &:hover {
-
-          border-bottom: 1px dotted #0d033a ;
-=======
       color: $text-color !important;
       &:hover {
 
-          border-bottom: 1px dotted $text-color ;
->>>>>>> 062d46b65e5ca47f3af1d1354b8d28f3b9250cb6
+          border-bottom: 1px dotted #0d033a ;
       }
 
       &:visited {
@@ -183,17 +179,10 @@ a {
       }
     }
     &.post-title-link{
-<<<<<<< HEAD
-      color: #0d033a !important;
+      color: $text-color !important;
       &:hover {
 
           border-bottom: 1px dotted #0d033a !important ;
-=======
-      color: #FFDB58 !important;
-      &:hover {
-
-          border-bottom: 1px dotted #FFDB58 !important ;
->>>>>>> 062d46b65e5ca47f3af1d1354b8d28f3b9250cb6
       }
 
       &:visited {
@@ -378,6 +367,9 @@ pre {
 /**
  * Site header
  */
+.header-site {
+   background: #000000 url(https://s-media-cache-ak0.pinimg.com/originals/81/c1/f8/81c1f894d730b3aefc717ad848b2ebb8.jpg) 100% 100% no-repeat;
+}
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
@@ -433,7 +425,7 @@ pre {
   text-transform: lowercase;
 }
 .page-link {
-  color: rgb(170, 170, 170);
+  color: rgb(209, 16, 16);
 }
 .site-nav {
   .page-link {
